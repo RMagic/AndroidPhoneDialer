@@ -13,7 +13,7 @@ public class AndroidPhoneDialerActivity extends Activity {
         setContentView(R.layout.main);
         Intent dialIntent = new
         		Intent(Intent.ACTION_DIAL,Uri.parse("tel:5551212"));
-        dialIntent.setFlag(Intent.FLAG_ACTIVITY_NEW_TASK);
-        
+        dialIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(dialIntent);
     }
 }
